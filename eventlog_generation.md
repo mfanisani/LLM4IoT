@@ -8,10 +8,10 @@ The sensor names are as follows:
 
 It is possible that two activities have overlapping time. The output format should be in tabular format.
 For example:
-Date, Type, Activity, Start time, End time, need_event_data_next_date
-2020-01-01, Ambient, washing face, 20:05:10, 20:11:43, 0
-2020-01-01, Smartphone, Call, 20:08:11, 20:11:19, 0
-2020-01-01, Wristband, Night Sleep, 22:10:43, 06:15:00, 1
+Date, Type, Activity, Start time, End time, need_event_data_next_date\n
+2020-01-01, Ambient, washing face, 20:05:10, 20:11:43, 0\n
+2020-01-01, Smartphone, Call, 20:08:11, 20:11:19, 0\n
+2020-01-01, Wristband, Night Sleep, 22:10:43, 06:15:00, 1\n
 ...
 In the given data, for different activities we usually have the start time and end time in different rows; however, in the output we need to have the start time and end time in the same row. 
 If you could not find the end time of an activity that is started in event_data_date, you should  try to see if you find it in the event_data_next_date. Otherwise, you should consider the end time as the last time of the NEXT day that will be presented in event_data_next_date.
